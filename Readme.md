@@ -39,13 +39,14 @@ export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
 .
 ├── features
 │   ├── step_definitions  # Step definitions for Cucumber
-│   ├── utils               # API helper functions or Pactum flows
+│   ├── utils             # API helper functions or Pactum flows
 │   ├── test_data         # Test data files
 │   ├── feature_files     # Gherkin feature files
 ├── reports               # Test reports and logs
 ├── package-lock.json     # Project lock file
 ├── node_modules          # Node modules for the project
 ├── package.json          # Project configuration and dependencies
+├── constants             # Project Constant files
 └── README.md             # Project documentation
 ```
 
