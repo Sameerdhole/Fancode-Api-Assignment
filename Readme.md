@@ -1,22 +1,34 @@
 # Fancode API Testing Assignment
 
-Lightweight API Testing code
-
-API Testing framework used is PactumJS with Cucumber BDD
+This project is designed to automate API testing for Fancode's assignment using PactumJS with Cucumber BDD. It validates the expected behavior of APIs based on the scenarios outlined in the Gherkin feature files.
 
 ## Pre-Requisites
 
-Make sure node or nvm is installed
+Make sure Node.js is installed, preferably using nvm. You can install nvm using the following command:
 
-## Install Packages
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
 
-- `nvm use 18.16.0` sets the NVM version to 18.16.0.
-- `npm i` installs all the dependencies.
+Use the specific Node.js version:
 
-- Signup to reports.cucumber.io and then export token as shown below for reporting
-- `export CUCUMBER_PUBLISH_TOKEN=${your_token_value}` sets up reporting.
+```bash
+nvm use 18.16.0
+```
 
+
+Install project dependencies:
+
+```bash
+npm install
+```
+
+Signup to reports.cucumber.io and export the token for reporting:
 [Sample Report - https://reports.cucumber.io/reports/c7b0e0a3-7222-4f84-8d70-310fe670be2a]
+
+```bash
+export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
+```
 
 ## Run Tests
 
