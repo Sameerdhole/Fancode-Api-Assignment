@@ -23,7 +23,7 @@ Make sure node or nvm is installed
 - `npm run test`
 
 ## Folder Structure
-
+```bash
 .
 ├── features
 │   ├── step_definitions  # Step definitions for Cucumber
@@ -31,8 +31,10 @@ Make sure node or nvm is installed
 │   ├── test_data         # Test data files
 │   ├── feature_files     # Gherkin feature files
 ├── reports               # Test reports and logs
+├── package-lock.json     # Project lock file
+├── node_modules          # Node modules for the project
 ├── package.json          # Project configuration and dependencies
 └── README.md             # Project documentation
-
+```
 
 
