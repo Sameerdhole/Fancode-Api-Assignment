@@ -1,7 +1,8 @@
 const { spec } = require("pactum");
 
-const apiUtils = {
+const baseURL = "http://jsonplaceholder.typicode.com";
 
+const apiUtils = {
   /**
    * Fetches the list of users from the API.
    *
@@ -9,7 +10,9 @@ const apiUtils = {
    * @throws {Error} If the API call does not return a status of 200.
    */
   async getUsers() {
-    const users = await spec().get("/users").expectStatus(200).returns("body");
+    const users = await spec().get(`${baseURL}/users`).expectStatus(200);
+    const userData = users.body;
+    return userData;
   },
 
   /**
@@ -21,9 +24,10 @@ const apiUtils = {
    */
   async getTodosByUserId(userId) {
     const todos = await spec()
-      .get(`/todos?userId=${userId}`)
-      .expectStatus(200)
-      .returns("body");
+      .get(`${baseURL}/todos?userId=${userId}`)
+      .expectStatus(200);
+    const todosData = todos.body;
+    return todosData;
   },
 };
 
