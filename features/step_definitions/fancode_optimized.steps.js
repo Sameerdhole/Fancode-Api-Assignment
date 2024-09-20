@@ -1,4 +1,5 @@
 const { Given, Then } = require("@cucumber/cucumber");
+
 const apiUtils = require("../../utils/apiUtils");
 
 let users;
