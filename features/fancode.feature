@@ -6,4 +6,4 @@ Feature: Validate Residence adn task completion for users from FanCode City
         Then User Completed task percentage should be greater than 50%
 
 # This is not an optmized scenario design as we need to filter users twice based on todo tasks in 2 different steps [check if todo.lemth > 0 and then completion % >50 ]
-
+# TLDR: getTodosByUserId is called twice
