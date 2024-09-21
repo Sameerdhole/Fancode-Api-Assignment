@@ -10,12 +10,18 @@ Make sure Node.js is installed, preferably using nvm. You can install nvm using 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
+CD into the repo:
+
+```bash
+cd Fancode-Api-Assignment
+```
+
 Use the specific Node.js version:
 
 ```bash
+nvm install 18.16.0
 nvm use 18.16.0
 ```
-
 
 Install project dependencies:
 
@@ -37,16 +43,15 @@ export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
 ```bash
 .
 ├── features
-│   ├── step_definitions  # Step definitions for Cucumber
-│   ├── utils             # API helper functions or Pactum flows
-│   ├── test_data         # Test data files
-│   ├── feature_files     # Gherkin feature files
-├── reports               # Test reports and logs
-├── package-lock.json     # Project lock file
-├── node_modules          # Node modules for the project
-├── package.json          # Project configuration and dependencies
-├── constants             # Project Constant files
-└── README.md             # Project documentation
+│   ├── step_definitions   # Step definitions for Cucumber
+│   ├── .feature files     # Gherkin feature files
+├── utils                  # API helper functions or Pactum flows
+├── reports                # Test reports and logs
+├── package-lock.json      # Project lock file
+├── node_modules           # Node modules for the project
+├── package.json           # Project configuration and dependencies
+├── constants              # Project Constant files
+└── README.md              # Project documentation
 ```
 
 ## Sample Reports and Screenshots
