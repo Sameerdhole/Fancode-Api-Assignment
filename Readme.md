@@ -2,6 +2,16 @@
 
 This project is designed to automate API testing for Fancode's assignment using PactumJS with Cucumber BDD. It validates the expected behavior of APIs based on the scenarios outlined in the Gherkin feature files.
 
+## Frameworks and Libraries
+1. PactumJS - https://pactumjs.github.io/
+A REST API Testing Tool for all levels in a Test Pyramid.
+
+2. Cucumber BDD - https://cucumber.io/
+A tool for running automated tests written in plain language.
+
+3. Chai Assert Library - https://www.chaijs.com/
+A BDD / TDD assertion library for Node.js and the browser.
+
 ## Pre-Requisites
 
 Make sure Node.js is installed, preferably using nvm. You can install nvm using the following command:
