@@ -6,7 +6,7 @@ let fancodeResidentUsers = [];
 let usersWithTodos = [];
 let todos;
 
-Given("User has the todo tasks", async function () {
+Given(/^User has the todo tasks$/, async function () {
   users = await apiUtils.getUsers();
 
   for (const user of users) {
@@ -19,7 +19,7 @@ Given("User has the todo tasks", async function () {
   }
 });
 
-Given("User belongs to the city FanCode", function () {
+Given(/^User belongs to the city FanCode$/, { timeout: 2 * 5000 }, function () {
   fancodeResidentUsers = usersWithTodos.filter((user) => {
     const { lat, lng } = user.address.geo;
     return lat >= -40 && lat <= 5 && lng >= 5 && lng <= 100;
@@ -27,7 +27,7 @@ Given("User belongs to the city FanCode", function () {
 });
 
 Then(
-  "User Completed task percentage should be greater than 50%",
+  /^User Completed task percentage should be greater than 50%$/,
   async function () {
     for (const user of fancodeResidentUsers) {
       todos = await apiUtils.getTodosByUserId(user.id);

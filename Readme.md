@@ -24,7 +24,6 @@ npm install
 ```
 
 Signup to reports.cucumber.io and export the token for reporting:
-[Sample Report - https://reports.cucumber.io/reports/c7b0e0a3-7222-4f84-8d70-310fe670be2a]
 
 ```bash
 export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
@@ -50,4 +49,9 @@ export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
 └── README.md             # Project documentation
 ```
 
-
+## Sample Reports and Screenshots
+[Sample Report - https://reports.cucumber.io/reports/c7b0e0a3-7222-4f84-8d70-310fe670be2a]
+1. Terminal Report
+![Alt text](/Sreenshots/Terminal_report.png?raw=true "Terminal Report")
+2. UI Report
+![Alt text](/Sreenshots/UI_report.png?raw=true "UI Report")
