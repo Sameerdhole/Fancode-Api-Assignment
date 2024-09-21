@@ -51,7 +51,7 @@ export CUCUMBER_PUBLISH_TOKEN=${your_token_value}
 
 ## Sample Reports and Screenshots
 [Sample Report - https://reports.cucumber.io/reports/c7b0e0a3-7222-4f84-8d70-310fe670be2a]
-1. Terminal Report
+1. Terminal Report<br />
 ![Alt text](/Sreenshots/Terminal_report.png?raw=true "Terminal Report")
-2. UI Report
+2. UI Report<br />
 ![Alt text](/Sreenshots/UI_report.png?raw=true "UI Report")
