@@ -9,7 +9,7 @@ let fancodeResidentUsers = [];
 let usersWithTodos = [];
 let todos;
 
-Given(/^User has the todo tasks$/, async function () {
+Given(/^User has the todo tasks$/, { timeout: 2 * 5000 }, async function () {
   users = await apiUtils.getUsers();
   expect(users).to.be.an("array").that.is.not.empty;
 
@@ -36,6 +36,7 @@ Given(/^User belongs to the city FanCode$/, { timeout: 2 * 5000 }, function () {
 
 Then(
   /^User Completed task percentage should be greater than 50%$/,
+  { timeout: 2 * 5000 },
   async function () {
     for (const user of fancodeResidentUsers) {
       todos = await apiUtils.getTodosByUserId(user.id);

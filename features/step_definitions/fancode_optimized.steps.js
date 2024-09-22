@@ -8,7 +8,7 @@ let users;
 let fancodeResidentUsers = [];
 let todos;
 
-Given("A list of users", async function () {
+Given(/^A list of users$/, { timeout: 2 * 5000 }, async function () {
   users = await apiUtils.getUsers();
   expect(users).to.be.an("array").that.is.not.empty;
 });
